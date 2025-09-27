@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="64" height="64" viewBox="0 0 64 64">
+<defs>
+</defs>
+<rect x="0" y="0" width="64" height="64" fill="#ffffff" />
+<path d="M32,17.45077321642143 L15.200000000000003,46.54922678357857 L48.8,46.54922678357857 Z" fill="none" stroke="#2F4F4F" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M27.63523196492643,14.930773216421432 L10.835231964926432,44.029226783578565" stroke="#2F4F4F" stroke-width="1.6" stroke-linecap="round" />
+<path d="M36.36476803507357,14.930773216421432 L53.164768035073564,44.029226783578565" stroke="#2F4F4F" stroke-width="1.6" stroke-linecap="round" />
+</svg>
