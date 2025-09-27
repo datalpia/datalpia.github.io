@@ -11,10 +11,6 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    env:
-      SITE_URL: datalpia.com
-    outputs:
-      site_url: ${{ steps.output_step.outputs.site_url }}
 
     steps:
       - uses: actions/checkout@v5
@@ -23,15 +19,12 @@ jobs:
           mkdir -p dist
           cp -R static dist/.
           cp index.html dist/.
-          echo "${SITE_URL}" > dist/CNAME
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: build
           path: dist
           include-hidden-files: true
-      - id: output_step
-        run: echo "site_url=${SITE_URL}" >> $GITHUB_OUTPUT
 
   deploy:
     name: Deploy
@@ -39,7 +32,7 @@ jobs:
     needs: build
     environment:
       name: website
-      url: ${{ needs.build.outputs.site_url }}
+      url: https://datalpia.com
     if: github.ref == 'refs/heads/main'
 
     permissions:
