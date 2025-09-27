@@ -1,5 +1,7 @@
 # Datalpia Website
 
+> Bridging data science and engineering
+
 ## License
 
 Licensed under GNU Affero General Public License v3.0 (AGPLv3)
